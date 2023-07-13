@@ -13,13 +13,18 @@
 @media screen and (max-width: 660px) {
     img.project-two {
         width: 200px;
-       
+
     }
-} 
- 
+}
+
+@media screen and (max-width: 660px) {
+    ul.contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
     
-
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
@@ -39,13 +44,9 @@ nav {
 header {
     font-size: 35px;
     width: 300px;
-    margin-left: 30px;
+    margin-left: 60px;
 
 
-}
-
-div {
-    margin-right: 30px;
 }
 
 #top {
@@ -75,10 +76,8 @@ h2 {
 
 .aside {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: var(--cards);
-    
+
 }
 
 .aside p {
@@ -116,6 +115,7 @@ a {
 .project {
     display: flex;
     align-items: center;
+    border-radius: 10px;
 
 }
 
@@ -135,20 +135,34 @@ a {
     height: 200px;
     width: 500px;
     margin: 25px;
+    border: 5px solid black;
+    border-radius: 10px;
 
 }
 
 .contact {
-    display:flex;
+    display: flex;
     justify-content: center;
-    
+    background-color: var(--cards);
+    height: 200px;
+
 }
 
 .contact li {
     display: flex;
+    margin-top: 100px;
+}
+
+ul.contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+section#contactme {
+    height: 200px;
 }
 
 li {
     list-style: none;
 }
-
