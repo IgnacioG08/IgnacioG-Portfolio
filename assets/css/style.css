@@ -1,22 +1,24 @@
+/* Creates a pseudo element storing the background color in case I ever need to change the color. Rather than changing each section all I need 
+to do is change it here*/
 :root {
     --cards: white;
 
 }
-
+/* media query allows the page to be responsive and collapse into itself starting at 800px turning from row to column */
 @media screen and (max-width: 800px) {
     .aside {
         display: flex;
         flex-direction: column;
     }
 }
-
+/* Media query makes images shrink to fit the screen once the pixels reach 660*/
 @media screen and (max-width: 660px) {
     img.project-two {
         width: 200px;
 
     }
 }
-
+/* Sets the contact me unordered list into columns in a flex then centers them*/
 @media screen and (max-width: 660px) {
     ul.contact {
         display: flex;
@@ -30,7 +32,7 @@ body {
     margin: 0px;
     background-color: white;
 }
-
+/* References the root above to maintain the background color*/
 nav {
     background-color: var(--cards);
     display: flex;
